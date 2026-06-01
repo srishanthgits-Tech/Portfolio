@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srishanth | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Srishanth</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>
+                Srishanth
+                <span>Srigadde</span>
+            </h1>
+
+            <h2>
+                Building Digital Products with Code, Data & Strategy
+            </h2>
+
+            <p>
+                Developer • Data Analyst • Product Enthusiast
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Srishanth">
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-text">
+            <p>
+                I'm an Information Technology undergraduate passionate
+                about software development, artificial intelligence,
+                analytics, and product innovation.
+
+                My goal is to build impactful digital products that solve
+                real-world problems through technology and data-driven
+                decision making.
+            </p>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>3+</h3>
+                <p>Projects</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>2</h3>
+                <p>Internships</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>40+</h3>
+                <p>Students Mentored</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>🏆</h3>
+                <p>Hackathon Winner</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">NodeJS</div>
+            <div class="skill-card">Firebase</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Power BI</div>
+            <div class="skill-card">Tableau</div>
+            <div class="skill-card">AI & ML</div>
+            <div class="skill-card">Prompt Engineering</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+
+
+    <div class="project-grid">
+    <div class="project-card" onclick="openModal()">
+        <h3>AI-Powered Fake News & Image Detection</h3>
+        <p>
+            Detect fake news and manipulated images using AI.
+        </p>
+    </div>
+
+    <div class="project-card" onclick="openFeedbackModal()">
+
+    <h3>Student Feedback Analysis</h3>
+
+    <p>
+        NLP based sentiment analysis system.
+    </p>
+
+</div>
+<div class="project-card" onclick="openCampaignModal()">
+        <h3>Social Media Campaign Tracker</h3>
+        <p>
+            Campaign performance and ROI analytics dashboard.
+        </p>
+    </a>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+<!-- PROJECT POPUP -->
+
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+<h2>AI-Powered Fake News & Image Detection</h2>
+<img
+src="images/fake-news-home.png"
+alt="Project Screenshot"
+class="project-preview">
+
+<p>
+    AI-Powered Fake News & Image Detection is an intelligent web platform
+    designed to combat misinformation across digital media. The system
+    analyzes both news articles and images to identify potentially fake,
+    misleading, or manipulated content using Machine Learning and Deep
+    Learning algorithms.
+
+    With the rapid spread of misinformation on social media and online
+    platforms, this solution helps users verify content credibility before
+    sharing or consuming information.
+</p>
+
+<h3>Problem Statement</h3>
+
+<p>
+    Millions of users consume information daily without verifying its
+    authenticity. Fake news and manipulated images can influence public
+    opinion, spread misinformation, and create social impact. This project
+    aims to provide an automated verification system that helps users make
+    informed decisions.
+</p>
+
+<h3>Key Features</h3>
+
+<ul>
+    <li>✅ Fake News Detection using Machine Learning models</li>
+    <li>✅ Image Manipulation & Tampering Detection</li>
+    <li>✅ OTP-Based User Authentication</li>
+    <li>✅ AI-Powered News Summarization</li>
+    <li>✅ Confidence Score for Prediction Accuracy</li>
+    <li>✅ User-Friendly Responsive Interface</li>
+    <li>✅ Real-Time Content Verification</li>
+</ul>
+
+<h3>Tech Stack</h3>
+
+<p>
+    Python, Flask, TensorFlow, Machine Learning,
+    Deep Learning, HTML, CSS, JavaScript,
+    SQLite / MySQL
+</p>
+
+<h3>Impact</h3>
+
+<p>
+    This project demonstrates the practical application of Artificial
+    Intelligence in solving real-world problems related to misinformation,
+    digital trust, and media verification. It combines software
+    development, machine learning, data analysis, and user experience
+    design into a single integrated solution.
+</p>
+
+        <a href="https://github.com/srishanthgits-Tech/AI-Fake-News-Detection-System"
+   target="_blank"
+   class="btn">
+    View GitHub
+</a>
+    </div>
+
+</div>
+
+<div id="feedbackModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeFeedbackModal()">
+            &times;
+        </span>
+
+        <h2>Student Feedback Analysis System</h2>
+
+        <img
+        src="images/student-feedback.png"
+        alt="Student Feedback Analysis"
+        class="project-preview">
+
+        <p>
+            Student Feedback Analysis is an NLP-based application
+            designed to analyze and classify student feedback into
+            Positive, Negative, and Neutral categories using
+            Natural Language Processing techniques.
+        </p>
+
+        <h3>Problem Statement</h3>
+
+        <p>
+            Educational institutions receive large amounts of
+            student feedback. Manually analyzing thousands of
+            responses is time-consuming and inefficient.
+            This project automates the process using sentiment
+            analysis techniques.
+        </p>
+
+        <h3>Key Features</h3>
+
+        <ul>
+            <li>✅ Sentiment Classification</li>
+            <li>✅ Positive / Negative / Neutral Detection</li>
+            <li>✅ Text Processing & Cleaning</li>
+            <li>✅ NLP-Based Analysis</li>
+            <li>✅ Dashboard Visualization</li>
+            <li>✅ Data Insights Generation</li>
+        </ul>
+
+        <h3>Tech Stack</h3>
+
+        <p>
+            Python, NLP, TextBlob,
+            Pandas, Matplotlib,
+            HTML, CSS, JavaScript
+        </p>
+
+        <h3>Impact</h3>
+
+        <p>
+            Helps institutions understand student satisfaction,
+            identify recurring issues, and make data-driven
+            improvements in academic services.
+        </p>
+
+        <div class="buttons">
+
+            <a href="https://github.com/srishanthgits-Tech/DataAnalytics_03"
+               target="_blank"
+               class="btn">
+                View GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="campaignModal" class="modal">
+
+```
+<div class="modal-content">
+
+    <span class="close" onclick="closeCampaignModal()">&times;</span>
+
+    <h2>📊 Social Media Campaign Tracker</h2>
+
+    <img
+    src="images/social-media-campaign.png"
+    alt="Social Media Campaign Tracker"
+    class="project-preview">
+
+    <p>
+        Developed a data-driven campaign analytics solution that helps
+        businesses track, monitor, and optimize digital marketing
+        campaigns. The dashboard provides actionable insights into
+        campaign performance, audience engagement, and ROI.
+    </p>
+
+    <h3>🚀 Project Highlights</h3>
+
+    <ul>
+        <li>Campaign Performance Monitoring</li>
+        <li>KPI Tracking Dashboard</li>
+        <li>CTR & Conversion Analysis</li>
+        <li>ROI Measurement & Reporting</li>
+        <li>Engagement Trend Visualization</li>
+        <li>Data-Driven Decision Support</li>
+    </ul>
+
+    <h3>🛠 Tech Stack</h3>
+
+    <p>
+        Power BI • SQL • Excel • Python • Data Analytics
+    </p>
+
+    <h3>📈 Business Impact</h3>
+
+    <p>
+        Enabled marketing teams to identify high-performing campaigns,
+        improve engagement strategies, and maximize marketing ROI
+        through centralized analytics and reporting.
+    </p>
+
+    <div class="buttons">
+
+        <a href="https://github.com/srishanthgits-Tech/DataAnalytics_02"
+           target="_blank"
+           class="btn">
+            View GitHub
+        </a>
+
+    </div>
+
+</div>
+```
+
+</div>
+    
+<section id="experience" class="section">
+
+    <div class="section-title">
+        <h2>Experience</h2>
+    </div>
+
+    <div class="experience-container">
+
+        <!-- ScaleOxpert -->
+<div class="exp-card">
+
+    <h3>Web Developer Intern</h3>
+
+    <h4>ScaleOxpert</h4>
+
+    <span class="exp-date">
+        March 2025 – July 2025
+    </span>
+
+    <p>
+        Worked as a Web Developer Intern, contributing to the
+        design and development of responsive web applications.
+        Collaborated with development teams to build scalable,
+        user-friendly interfaces and improve overall website
+        performance.
+    </p>
+
+    <ul>
+        <li>✔ Developed responsive web applications</li>
+        <li>✔ Improved UI/UX for better user engagement</li>
+        <li>✔ Collaborated with cross-functional teams on live projects</li>
+        <li>✔ Worked on real-world business solutions and deployments</li>
+    </ul>
+
+    <div class="buttons">
+
+        <a
+        href="ScalOxpert Intern.png"
+        target="_blank"
+        class="btn">
+
+            View Certificate
+
+        </a>
+
+    </div>
+
+</div>
+       <div class="exp-card">
+
+    <h3>Data Analyst Intern</h3>
+
+    <h4>Future Intern</h4>
+
+    <span class="exp-date">
+        July 2025 – August 2025
+    </span>
+
+    <p>
+        Worked on data analytics projects involving data
+        cleaning, visualization, reporting and business
+        intelligence. Generated actionable insights from
+        datasets to support data-driven decision-making.
+    </p>
+
+    <ul>
+        <li>✔ Created dashboards and visual reports</li>
+        <li>✔ Analyzed business datasets using analytical techniques</li>
+        <li>✔ Identified trends, KPIs and performance metrics</li>
+        <li>✔ Presented findings through visual storytelling</li>
+    </ul>
+
+    <div class="lor-badge">
+        🏆 Received Letter of Recommendation (LOR)
+    </div>
+
+    <div class="buttons" style="margin-top:20px;">
+
+        <a
+        href="SRISHANTH SRIGADDE Internship Certificate DS_page-0001 (1).jpg"
+        target="_blank"
+        class="btn">
+
+            Internship Certificate
+
+        </a>
+
+        <a
+        href="SRISHANTH SRIGADDE LoR_page-0001.jpg"
+        target="_blank"
+        class="btn-outline">
+
+            View LOR
+
+        </a>
+
+    </div>
+
+</div>
+
+<section id="certifications" class="section">
+
+    <div class="section-title">
+        <h2>Certifications</h2>
+    </div>
+
+    <div class="certificate-container">
+
+        <div class="certificate-image">
+
+            <img
+            id="certificateImage"
+            src="Google cloud certificate_page-0001.jpg"
+            alt="Certificate">
+
+        </div>
+
+        <div class="certificate-info">
+
+            <h3 id="certificateTitle">
+                Google Data Analytics
+            </h3>
+
+            <p id="certificateDescription">
+
+                Professional certification focused on
+                data cleaning, visualization, SQL,
+                spreadsheets and business analytics.
+
+            </p>
+
+        </div>
+
+    </div>
+ 
+    <div class="certificate-buttons">
+
+        <button onclick="showCertificate(1)">
+            Google Data Analytics
+        </button>
+
+        <button onclick="showCertificate(2)">
+            TATA Gen AI
+        </button>
+
+        <button onclick="showCertificate(3)">
+            Infosys AI
+        </button>
+
+        <button onclick="showCertificate(4)">
+            Product Management
+        </button>
+
+    </div>
+
+</section>
+    <!-- CONTACT -->
+     <!-- CONTACT -->
+
+<section id="contact" class="section">
+
+    <div class="section-title">
+        <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <p>
+            Let's connect and build something amazing together.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="https://github.com/srishanthgits-Tech" target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://leetcode.com/u/Srishanth_S/" target="_blank">
+                <i class="fas fa-code"></i>
+                LeetCode
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- FOOTER -->
+    <footer>
+        <p>e.mail: srishanthsrigadde007@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
